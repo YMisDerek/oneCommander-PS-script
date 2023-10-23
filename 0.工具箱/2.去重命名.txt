@@ -1,0 +1,6 @@
+#PS
+chcp 65001
+$filename= Get-Item $Sel
+$filename.name -match '.*【(.*)】?'
+Get-Item $Sel | ren -NewName { $Matches[1] -replace '】',''}
+

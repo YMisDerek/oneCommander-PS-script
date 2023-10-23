@@ -1,0 +1,3 @@
+#PS
+chcp 65001
+cp C:\Users\Ming\Desktop\template.pptx .

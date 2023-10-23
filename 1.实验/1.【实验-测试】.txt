@@ -1,0 +1,4 @@
+#PS
+chcp 65001
+$date=(Get-Date).ToString('yyMMdd')
+Get-Item $Sel | ren -NewName { $date +'【实验-测试】'+ '【' + $_.BaseName + '】' + $_.extension}
